@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="TabViewApp.TabContainer">
+    <ContentView.Content>
+        <tabView:SfTabView x:Name="TabView" VisibleHeaderCount="3" Grid.Row="1" Margin="8,4,8,4">
+            <tabView:SfTabView.SelectionIndicatorSettings>
+                <tabView:SelectionIndicatorSettings Position="Bottom" StrokeThickness="3"/>
+            </tabView:SfTabView.SelectionIndicatorSettings>
+            <tabView:SfTabItem x:Name="OptionsTab" Title="Options" TitleFontSize="18" TitleFontAttributes="Bold">
+                <tabView:SfTabItem.Content>
+                    <Label Text="Hello" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem x:Name="DataTab" Title="Data" TitleFontSize="18" TitleFontAttributes="Bold">
+                <tabView:SfTabItem.Content>
+                    <Label Text="Hello" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem x:Name="AboutAppTab" Title="AboutApp" TitleFontSize="18" TitleFontAttributes="Bold">
+                <tabView:SfTabItem.Content>
+                    <Label Text="Hello" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentView.Content>
+</ContentView>
